@@ -1,0 +1,43 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  padding: 20px;
+
+  text-align: center;
+}
+
+.item:not(:last-child) {
+  border-right: 1px solid var(--border-color);
+}
+
+.docx {
+  composes: item;
+  background-color: rgb(121, 199, 255);
+}
+
+.pdf {
+  composes: item;
+  background-color: rgb(155, 41, 255);
+}
+
+.mp3 {
+  composes: item;
+  background-color: rgb(219, 43, 43);
+}
+
+.psd {
+  composes: item;
+  background-color: rgb(21, 193, 138);
+}
+
+.label {
+  color: var(--third-text-color);
+  margin-bottom: 10px;
+}
+
+.percentage {
+  color: var(--third-text-color);
+  font-weight: 700;
+  font-size: 18px;
+}
